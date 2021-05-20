@@ -1,0 +1,22 @@
+// Accept 10 numbers display sum
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int sum = 0, counter = 0, num;
+
+    while(counter < 10)
+    {
+        cout << "\n\t Enter number: ";
+        cin >> num;
+
+        sum += num;
+        counter ++; 
+    }
+
+    cout << "\n\t Sum: " << sum;
+
+    return 0;
+}
