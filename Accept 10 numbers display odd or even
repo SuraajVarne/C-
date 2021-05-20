@@ -1,0 +1,30 @@
+// Accept 10 numbers diplay odd or even
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int odd = 0, even = 0, counter = 0, num;
+
+    while(counter < 10)
+    {
+        cout << "\n\t Enter number: ";
+        cin >> num;
+
+        if(num % 2 == 0)
+        {
+            odd += 1;
+        }
+        else 
+        {
+            even += 1;
+        }
+        counter ++;
+    }
+
+    cout << "\n\t Odd numbers: " << odd;
+    cout << "\n\t Even numbers: " << even;
+
+    return 0;
+}
