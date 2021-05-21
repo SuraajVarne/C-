@@ -1,0 +1,30 @@
+// Fibonacci Series
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int prev = 1, curr = 1, series, next;
+    
+    cout << "\n\t Enter series: ";
+    cin >> series;
+    
+    cout << prev;
+    cout << curr;
+    
+    series = series -2;
+    
+    while(series > 0)
+    {
+        next = prev + curr;
+        cout << next;
+        
+        series = series - 1;
+        
+        prev = curr;
+        curr = next;
+    }
+    
+    return 0;
+}
