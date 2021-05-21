@@ -1,0 +1,27 @@
+// Display highest among 10 numbers
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num, large, counter = 0;
+
+    cout << "\n\t Enter number: ";
+    cin >> large;
+
+    while(counter < 9)
+    {
+        cout << "\n\t Enter number: ";
+        cin >> num;
+
+            if(large < num)
+            {
+                large = num;
+            }
+        counter ++;       
+    }
+    cout << "\n\t The largest number is: " << large;
+
+    return 0;
+}
