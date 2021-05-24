@@ -10,15 +10,15 @@ int main()
     cout << "\n\t Enter series: ";
     cin >> series;
     
-    cout << prev;
-    cout << curr;
+    cout << " \n\t The Fibonacci series are: " << prev;
+    cout << " " << curr;
     
     series = series -2;
     
     while(series > 0)
     {
         next = prev + curr;
-        cout << next;
+        cout << " " << next;
         
         series = series - 1;
         
